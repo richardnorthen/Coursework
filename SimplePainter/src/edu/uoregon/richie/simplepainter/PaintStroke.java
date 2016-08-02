@@ -86,7 +86,7 @@ public class PaintStroke {
 
 	/**
 	 * Sets the {@link BasicStroke} of the <code>PaintStroke</code>.
-	 * @param points  The {@link BasicStroke} of the <code>PaintStroke</code>
+	 * @param strokeStyle  The {@link BasicStroke} of the <code>PaintStroke</code>
 	 */
 	public void setStrokeStyle (BasicStroke strokeStyle) {
 		this.strokeStyle = strokeStyle;
