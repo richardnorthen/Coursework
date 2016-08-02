@@ -2,7 +2,7 @@
 This repository contains notable work from my classes at the University of Oregon.
 
 ## CIS 212 - Spring 2014
-__Computer Science III__ was taught in Java and covered the basic principles of object-oriented programming. Weekly assignments required us to apply what we had learned that week into a program.
+__Computer Science III__ was taught in Java and covered the basic principles of object-oriented programming. Weekly assignments required us to apply what we had learned that week into a program, following any requirements from the instructors.
 
 ### [SimplePainter](SimplePainter/)
 One of my assignments required me to create an application that captured mouse movement. I developed __SimplePainter__, a simple drawing program using a Swing GUI. Important notes:
@@ -14,4 +14,5 @@ One of my assignments required me to create an application that captured mouse m
 ![SimplePainter](/SimplePainter/preview.png)
 
 ### [DataManipulator](DataManipulator/)
-Another assignment focused on the use of sorting algorithms and their implementations in Java. __DataManipulator__ can generate sets of UUIDs (up to 50,000) and then perform a 
+This assignment focused on the use of sorting algorithms and their implementations in Java. __DataManipulator__ can generate sets of UUIDs (up to 50,000) and perform a selection and/or merge sort on them. The application is threaded, so that the GUI remains responsive while working in the background. Important notes:
+* 

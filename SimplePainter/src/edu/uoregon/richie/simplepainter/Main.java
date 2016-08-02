@@ -46,7 +46,7 @@ public class Main extends JFrame implements ActionListener {
 
 	/**
 	 * Initializes the Main class and displays it.
-	 * @param args  Unused.
+	 * @param args  Unused
 	 */
 	public static void main(String[] args) {
 		Main frame = new Main();
