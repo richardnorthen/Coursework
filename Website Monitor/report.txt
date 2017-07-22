@@ -1,0 +1,22 @@
+Richard Northen 951263471
+CIS 415 Project 0
+
+submitted files: report.txt date.c tldlist.c
+
+overall notes:
+- both date.c and tldlist.c contain no print messages
+- the gcc and cc compilers were used, with the flags -W -Wall (per the Makefile)
+- the program output matches the expected output in both small.txt and large.txt
+- valgrind reports no issues
+- I did not break lines longer than 80 characters - hope this is alright
+
+date.c notes:
+- the algorithm for determining a leap year was found here: stackoverflow.com/a/11595914
+- the datestr does not have to have leading 0's (so 1/5/111 will work)
+- date_compare returns the exact number of days between the two dates (inclusive)
+
+tldlist.c notes:
+- static functions are defined at the top (with easy functions already declared)
+- the TLD must be no more than 3 letters (per the Assignment)
+- when converting the backing datastructure from a BST to AVL, both wikipedia.org and geeksforgeeks.org were used as reference material
+- if none of the inputs are within the specified dates, the program will print "Unable to create iterator" since the list is empty

@@ -1,0 +1,15 @@
+Richard Northen (richie)
+CIS 415 Spring 2016 Project 2
+
+submitted files: report.txt networkdriver.c diagram.jpg
+
+overall notes:
+- program compiles and executes normally
+- valgrind shows no errors or leaks (only possibly / reachable, but so does the demo!)
+- I opted to use the provided BoundedBuffer.h implementation
+- since the nonblocking methods were guaranteed to return a 0 or 1 (as mentioned on Piazza) they are simply passed through
+- also, MAX_PID is guaranteed to remain between 0 - 10 as mentioned in the files
+- the only external library used (other than the provided ones) was pthread.h
+- RETRIES is the number of times send_packet() will retry until giving up
+- the DIAGNOSTICS methods used attempt to emulate what was implemented in the provided demo (try should all be prefixed with "Driver:" as well)
+- the code strictly adheres to the bounded buffers as well as the nonblocking desirability: PacketDescriptors are only used from the FreePacketDescriptorStore, a full waiting_buffer means that additional PacketDescriptors coming from the NetworkDevice will be discarded, and applications that do not reguarlarly call the *_get_packet() functions could lose recent packets
