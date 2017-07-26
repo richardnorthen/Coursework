@@ -1,5 +1,4 @@
-Richard Northen (richie)
-CIS 415 Spring 2016 Project 2
+Richard Northen
 
 submitted files: report.txt networkdriver.c diagram.jpg
 

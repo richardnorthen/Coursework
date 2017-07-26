@@ -1,28 +1,27 @@
-# Richard Alp Northen - CIS 314 Assignment 5
+# Richard Alp Northen
 # recfib.ys - recursively calculates numbers in the Fibonacci sequence
-# Since y86 uses the same registers throughout the program, any registers that contain data specific to an instance
-# of the function must be saved (on the stack) before a recursive call is made and popped at the end.
+# Note: since y86 uses the same registers throughout the program, any registers that contain data specific to an instance of the function must be saved (on the stack) before a recursive call is made and popped at the end.
 
 	.pos 0
 init:	irmovl Stack,%esp	# setup stack and base pointers
 	irmovl Stack,%ebp
-	call Main		# start main program
+	call Main				# start main program
 	halt
 
 Main:	pushl %ebp
 	rrmovl %esp,%ebp
 
 	irmovl $2,%eax
-	pushl %eax		# push 2
-	call RecFib		# RecFib(2)
-	pushl %eax		# save return value of RecFib(2) on stack since all registers are used by RecFib again
+	pushl %eax				# push 2
+	call RecFib				# RecFib(2)
+	pushl %eax				# save return value of RecFib(2) on stack since all registers are used by RecFib again
 
 	irmovl $10,%eax
-	pushl %eax		# push 10
-	call RecFib		# RecFib(10) will be stored in eax
+	pushl %eax				# push 10
+	call RecFib				# RecFib(10) will be stored in eax
 
-	popl %ebx		# pop and discard 10 from the stack so we can reach.. 
-	popl %ebx		# .. the return value of RecFib(2)
+	popl %ebx				# pop and discard 10 from the stack so we can reach.. 
+	popl %ebx				# .. the return value of RecFib(2)
 
 	rrmovl %ebp,%esp
 	popl %ebp
@@ -31,38 +30,38 @@ Main:	pushl %ebp
 # int RecFib(int x)
 RecFib:	pushl %ebp
 	rrmovl %esp,%ebp
-	pushl %ecx		# save old x so when we recursively call this function we don't lose it
-	pushl %edx		# save old RecFib(x-1)
+	pushl %ecx				# save old x so when we recursively call this function we don't lose it
+	pushl %edx				# save old RecFib(x-1)
 
-	mrmovl 8(%ebp),%ecx	# ecx = x
-	rrmovl %ecx,%eax	# eax = x
+	mrmovl 8(%ebp),%ecx		# ecx = x
+	rrmovl %ecx,%eax		# eax = x
 
-	andl %eax,%eax		# base case: x = 0
-	jne L1			# skip to L1 if x != 0
-	jmp End			# return 0
+	andl %eax,%eax			# base case: x = 0
+	jne L1					# skip to L1 if x != 0
+	jmp End					# return 0
 
 L1:	irmovl $-1,%ebx
-	addl %eax,%ebx		# base case: x = 1
-	jne L2 			# skip to L2 if x-1 != 0 (eax unchanged)
-	jmp End			# return 1
+	addl %eax,%ebx			# base case: x = 1
+	jne L2 					# skip to L2 if x-1 != 0 (eax unchanged)
+	jmp End					# return 1
 	
 L2:	irmovl $-1,%ebx
 	addl %ebx,%eax
-	pushl %eax		# push x-1
-	call RecFib		# RecFib(x-1)
-	rrmovl %eax,%edx	# store return in edx
-	popl %ebx		# pop and discard x-1 (so we can reach saved values from start)
+	pushl %eax				# push x-1
+	call RecFib				# RecFib(x-1)
+	rrmovl %eax,%edx		# store return in edx
+	popl %ebx				# pop and discard x-1 (so we can reach saved values from start)
 
-	rrmovl %ecx,%eax	# eax = x
+	rrmovl %ecx,%eax		# eax = x
 	irmovl $-2,%ebx
 	addl %ebx,%eax
-	pushl %eax		# push x-2
-	call RecFib		# RecFib(x-2)
-	addl %edx,%eax		# add return values together into eax
-	popl %ebx		# pop and discard x-2 (so we can reach saved values from start)
+	pushl %eax				# push x-2
+	call RecFib				# RecFib(x-2)
+	addl %edx,%eax			# add return values together into eax
+	popl %ebx				# pop and discard x-2 (so we can reach saved values from start)
 
-End:	popl %edx		# load old RecFib(x-1) in preparation for ending recursive call
-	popl %ecx		# load old x
+End:	popl %edx			# load old RecFib(x-1) in preparation for ending recursive call
+	popl %ecx				# load old x
 	rrmovl %ebp,%esp
 	popl %ebp
 	ret

@@ -1,5 +1,4 @@
-Richard Northen 951263471
-CIS 415 Project 0
+Richard Northen
 
 submitted files: report.txt date.c tldlist.c
 

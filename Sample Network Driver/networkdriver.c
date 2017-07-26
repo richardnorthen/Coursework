@@ -1,6 +1,5 @@
 /*
- * Richard Northen (richie)
- * CIS 415 Spring 2016 - Project 2
+ * Richard Northen
  * This is own my work, other than the functions in the provided .h files.
  */
 

@@ -6,8 +6,7 @@
 #define MAX_TLD_LEN 4
 
 /*
- * Richard Northen 951263471
- * CIS 415 Project 0
+ * Richard Northen
  * This is (mostly) my own work as discussed in report.txt
  */
 

@@ -2,8 +2,7 @@
 #include <stdlib.h> /* malloc, free, strtol, NULL */
 
 /*
- * Richard Northen 951263471
- * CIS 415 Project 0
+ * Richard Northen
  * This is all my own work with the exception of lines 44, 77, and 79, as discussed in report.txt
  */
 
