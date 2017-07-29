@@ -6,18 +6,17 @@ This repository contains notable programs developed m.
 ## Remote Authentication Using Facial Recognition
 Description
 
-### Globally Distributed Software Development Project - Spring 2016
+### Globally Distributed Software Development Project
 Focused on Android Client that interfaced with another group's server. 
 DSD Group Project - Android Client for Facial Recognition Software
 	
-### Circumventing Facial Recognition Authentication Systems - Winter 2017
-Proposal, project, and program developed to test the security of using facial recognition as biometric security.
-Group Project - Desktop Facial Recognition Software for Biometric Security
+### [Circumventing Facial Recognition Authentication Systems](https://github.com/richardnorthen/cis433-project)
+Created a proposal, project, program, and report with a partner to test the feasability of facial recognition as biometric authentication measure. I developed the Facial Recognition Authentication System (FRAS) software that interfaced with Microsoft's FaceAPI system to use in our project.
 
 ***
 
-## Parallel Image Processing - Spring 2015
-Group Project - Parallel Image Processing with accompanying presentation and report on performance.
+## [Parallel Image Processing](\Parallel%20Image%20Processing)
+Utilizes OpenCV and OpenMP to perform different image processing techniques on a set of images in paralllel. I developed the application and assisted in creating the report and presentation that demonstrated the increased performance gained by parallel processing.
 
 ***
 	
@@ -31,14 +30,16 @@ Group Project - Parallel Image Processing with accompanying presentation and rep
 
 ## Software Development Team Projects
 
-**Address Book** <br>
+**[Address Book](https://github.com/CIS422Group6/Project1)** <br>
+Created as part of a software development team, this Java application functions as a simple address book for storing contact information. I was the front-end programmer in our team and assisted in creating the documentation and user guides.
 
+**[Study Companion](https://github.com/CIS422Group6/Project2) and [Wiki](https://app.assembla.com/spaces/xis22w16-team6/wiki)** <br>
+Allows a user to create a set of flash-cards under various categories for later review or testing. Our team producers a full set of deliverables including requirements, specification, code, and documentation. I was the primary software engineer and tester, and reviewed the deliverables my teammates produced.
 
-**Study Companion and Wiki** <br>
 
 ***
 
-## Maze Solver in C and C++
+## [Maze Solver](/Maze%20Solver) in C and C++
 An algorithm for traversing mazes implemented in C and ported into C++. Uses the wall follower method to navigate from start to finish, recording the moves needed to successfully complete the maze. The C++ implementation also prints diagrams for each step taken.
 
 ***
@@ -46,24 +47,24 @@ An algorithm for traversing mazes implemented in C and ported into C++. Uses the
 ## Java Applications
 Both of these applications were developed in 2014 and utilize the Swing toolkit to provide a GUI.
 
-**SimplePainter** <br>
-A simple computer graphics program that supports 4 diifferent colors, 3 brush sizes, and an undo function. Captures mouse movement and displays various statistics about the current canvas.
+**[Simple Painter](\Simple%20Painter)** <br>
+A simple computer graphics program that supports 4 diifferent colors, 3 brush sizes, and an undo function. Captures mouse movement and displays various statistics about the current canvas. A fully defined Javadoc is also included within the source code.
 
-**DataManipulator** <br>
+**[Data Manipulator](\Data%20Manipulator)** <br>
 Generates up to 50,000 UUIDs in a list which can then be sorted using selection or merge sort. The GUI application is threaded to remain responsive while working in the background.
 
 ***
 
 ## Miscellaneous
 
-**Website Monitor** <br>
+**[Website Monitor](\Website%20Monitor)** <br>
 Takes a list of websites with dates and stores them in an AVL tree for quicker searching and sorting. The data structure is implemented by me and my work is in **date.c** and  **tldlist.c**.
 
-**Sample Network Driver** <br>
+**[Sample Network Driver](\Sample%20Network%20Driver)** <br>
 Simulates a network driver that stores and forwards incoming packets. The driver utilizes a bounded buffer and is non-blocking. My own work is in **networkdriver.c**.
 
-**Palindrome Program in Haskell** <br>
+**[Palindrome Program](palindrome.hs)** <br>
 A simple Haskell program that tests whether a given string is a palindrome. Demonstrates various functional programming techniques and their advantages in this context.
 
-**Recursive Fibonacci Generator** <br>
+**[Fibonacci Generator](recfib.ys)** <br>
 Recursively generates the Fibonacci sequence up to a given number. Written in y86 as an introduction the the x86 assembly language.
