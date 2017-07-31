@@ -1,3 +1,5 @@
+/* author: richardnorthen */
+
 #include <fstream>
 #include <iostream>
 #include "maze.hpp"

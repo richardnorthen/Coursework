@@ -1,7 +1,4 @@
-/*
- * utils.cpp
- *      Author: norris
- */
+/* author: norris */
 
 #include <fstream>
 #include <iostream>
@@ -23,7 +20,6 @@ Utils::Utils(int size, std::ifstream &f)
 }
 
 void Utils::print(int row, int col) {
-
 	std::string tmpMaze = data;
 	tmpMaze[row*size + col] = 'x';
 	for (int i = 0; i < size; i++ )
@@ -33,4 +29,3 @@ void Utils::print(int row, int col) {
 void Utils::reset() {
 	clearFirst = false;
 }
-

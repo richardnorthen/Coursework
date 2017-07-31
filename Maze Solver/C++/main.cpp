@@ -1,7 +1,4 @@
-/*
- * main.cpp
- *      Author: norris
- */
+/* author: norris */
 
 #include <iostream>  // needed
 #include <fstream>   // needed to read from a file
@@ -57,7 +54,6 @@ int main(int argc, const char *argv[]) {
 
 		} while ( ! maze.atExit() );
 
-
 		maze.getCurrentPosition(row, col);
 		mazeUtils.print(row, col);
 		std::cout << "YAY! Maze solved!" << std::endl;
@@ -65,8 +61,5 @@ int main(int argc, const char *argv[]) {
 		std::cin.get();    // wait for a keypress by user before moving on
 
 		mazeUtils.reset();
-
 	} // currentMaze
-
-
 }

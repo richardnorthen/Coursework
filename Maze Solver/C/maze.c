@@ -117,11 +117,11 @@ void mazeSolve(int size, char maze[size][size], point position) {
         if (move(size, maze, &position, &facing, RIGHT)) {
              /* move() will update position and facing and print the direction */
         } else if (move(size, maze, &position, &facing, UP)) {
-             /* move() will update position and facing and print the direction */
+             /* see above */
         } else if (move(size, maze, &position, &facing, LEFT)) {
-             /* move() will update position and facing and print the direction */
+             /* see above */
         } else if (move(size, maze, &position, &facing, DOWN)) {
-             /* move() will update position and facing and print the direction */
+             /* see above */
         } else {
             printf("unexpected case in move(direction), exiting");
             exit(1);

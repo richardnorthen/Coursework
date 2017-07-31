@@ -1,3 +1,5 @@
+/* author: norris */
+
 #ifndef MAZE_HPP_
 #define MAZE_HPP_
 

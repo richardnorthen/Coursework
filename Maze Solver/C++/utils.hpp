@@ -1,7 +1,4 @@
-/*
- * utils.hpp
- *      Author: norris
- */
+/* author: norris */
 
 #ifndef UTILS_HPP_
 #define UTILS_HPP_

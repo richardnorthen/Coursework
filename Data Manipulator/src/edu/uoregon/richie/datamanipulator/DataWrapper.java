@@ -65,7 +65,6 @@ public class DataWrapper extends Thread {
 		}
 	}
 
-	
 	public void setListener(DataListener listener) {
 		this.listener = listener;
 	}

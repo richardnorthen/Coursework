@@ -24,13 +24,6 @@ import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
 
-/*
- * The only main issue is having the frame "refresh" when content is changed or added.
- * I have some workarounds that are probably not ideal but it is what I was able to come up with.
- * However, all the components /will/ be repainted if the ComboBox or Remove buttons are used.
- * The progress bar ends prematurely if both searches are conducted at once (but both searches will still complete).
- */
-
 /**
  * The starting point of the application. <code>Main</code> extends
  * {@link JFrame} and is used to setup the properties and layout of the window,
