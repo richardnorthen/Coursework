@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tide v3</string>
+    <!-- Main Activity -->
+    <string name="station_label">Station</string>
+    <string name="date_label">Date</string>
+    <string name="tide_data_button">Show tides</string>
+    <string name="import_xml">Import XML file</string>
+    <string name="error_xml">Error importing XML file</string>
+    <!-- Open Dialog -->
+    <string name="dialog_choose_file">Choose downloaded file to import</string>
+    <string name="dialog_failed">Failed to open</string>
+</resources>

@@ -23,7 +23,8 @@ Utilizes OpenCV to perform different image processing techniques on a set of ima
 **[BriskNote](BriskNote/)** <br>
 A lightweight note-keeping app inspired by Google Keep.
 
-**Tide v3** <br>
+**[Tide v3](Tide%20v3/)** <br>
+Collects tidal information from monitoring stations within the USA. Downloads recently viewed tables onto the device for offline access. *Work-in-progress*.
 
 ***
 
