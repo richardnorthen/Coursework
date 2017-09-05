@@ -20,10 +20,10 @@ Utilizes OpenCV to perform different image processing techniques on a set of ima
 	
 ## Android Apps
 
+**[BriskNote](BriskNote/)** <br>
+A lightweight note-keeping app inspired by Google Keep.
+
 **Tide v3** <br>
-
-
-**BriskNote** <br>
 
 ***
 
@@ -34,7 +34,6 @@ Created as part of a software development team, this Java application functions 
 
 **[Study Companion](https://github.com/CIS422Group6/Project2) and [Wiki](https://app.assembla.com/spaces/xis22w16-team6/wiki)** <br>
 Allows a user to create a set of flash-cards for later review or testing. Our team produced a full set of deliverables including requirements, specification, code, documentation, and a wiki page. I was the primary software engineer and tester, and reviewed all of the deliverables my teammates produced.
-
 
 ***
 
