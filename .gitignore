@@ -6,3 +6,7 @@ bin/
 .settings/
 .classpath
 .project
+
+# IntelliJ IDEA files
+.idea/
+*.iml
